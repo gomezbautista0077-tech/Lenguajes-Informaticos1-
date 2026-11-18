@@ -336,3 +336,24 @@ body.oscuro {
     --color-texto: #f5f5f5;
     --color-tarjeta: #2a2a2a;
 }
+
+
+/* =========================================================
+   RESPONSIVE (celulares y tablets)
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .contenedor-articulos,
+    .sector-noticias {
+        grid-template-columns: 1fr;
+    }
+
+    .noticia {
+        flex-direction: column;
+    }
+
+    .noticia img {
+        width: 100%;
+    }
+}
