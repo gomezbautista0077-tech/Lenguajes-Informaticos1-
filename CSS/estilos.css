@@ -355,3 +355,13 @@ body.oscuro {
         width: 100%;
     }
 }
+
+.texto-corto {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* líneas visibles */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.texto-corto.expandido {
+  display: block;
+}
