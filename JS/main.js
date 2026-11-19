@@ -12,3 +12,10 @@ if (botonModo) {
         }
     });
 }
+
+function alternarTexto(idTexto, idBoton) {
+  const texto = document.getElementById(idTexto);
+  const boton = document.getElementById(idBoton);
+  const expandido = texto.classList.toggle("expandido");
+  boton.textContent = expandido ? "Leer menos" : "Leer más";
+}
