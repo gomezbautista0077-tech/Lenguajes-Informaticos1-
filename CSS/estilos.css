@@ -386,3 +386,15 @@ body.oscuro {
     color: #1b5e20;
     border-left-color: #2e7d32;
 }
+/* Variante propia de btn con la paleta (se usa como "btn btn-wachin") */
+
+.btn-wachin {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
