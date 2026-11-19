@@ -8,6 +8,7 @@
     --color-texto-claro: #ffffff;
     --fuente-principal: "Oswald", sans-serif;
     --color-tarjeta: #ffffff;
+    --color-footer: #292929;
 }
 
 /* RESET BASICO */
@@ -312,7 +313,7 @@ main {
 /* FOOTER */
 
 footer {
-    background-color: var(--color-texto);
+    background-color: var(--color-footer);
     color: var(--color-texto-claro);
     padding: 2rem;
     text-align: center;
