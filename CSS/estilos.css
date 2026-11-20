@@ -357,14 +357,13 @@ body.oscuro {
     }
 }
 
-.texto-corto {
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* líneas visibles */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
+
+/* Texto completo al hacer clic en "Leer más" */
 .texto-corto.expandido {
   display: block;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  overflow: visible;
 }
 
 /* Mensaje general que muestra main.js debajo del formulario */
@@ -426,3 +425,18 @@ body.oscuro {
     gap: 0.5rem;
     font-size: 0.9rem;
 }
+.texto-corto {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
+}
+
+.texto-corto.expandido {
+  display: block;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  overflow: visible;
+}
+ 
