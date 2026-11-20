@@ -3,27 +3,94 @@
 <head>
     <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/estilos.css">    
 </head>
-<body>
+<body>   
+  <header id="principio" class="portada">
     <h1>Zonas De Interes Turistico</h1>
-    <section><p>¿Planeas un viaje a Wachin City y no sabes por dónde empezar?
-        Lo cierto es que la ciudad ofrece una infinita cantidad de planes para realizar como turista,
+      <h2>¡Descubrí Wachin City!</h2>
+        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./Index.html">Wachin City</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal" aria-expanded="false"
+                        aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="./Index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./ciudad.html">Ciudad</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./lugares.html">Lugares</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                    <button id="btn-modo" class="btn btn-outline-light btn-sm ms-lg-3">Modo oscuro</button>
+                </div>
+                </div>
+        </nav>
+   </header>
+        <hr>
+  <main>
+    <section><h3>¿Planeas un viaje a Wachin City y no sabes por dónde empezar?</h3>
+        <p>Lo cierto es que la ciudad ofrece una infinita cantidad de planes para realizar como turista,
          por lo que puede resultar difícil ordenar el itinerario.
         Con el objetivo de que tu viaje sea exitoso, te recomendamos que leas esta guía
          hasta el final, pues será tu herramienta esencial para planificar una visita inolvidable.
           Wachin City te espera con mucha historia, cultura y variada oferta gastronómica.
           Aquí te contamos todo lo que puedes hacer en esta fascinante ciudad.</p>
-             <img src="https://media.gettyimages.com/id/1154000186/es/foto/cauc%C3%A1sico-turista-masculino-navegando-por-tokio-con-tel%C3%A9fono-inteligente.jpg?s=612x612&w=0&k=20&c=e_wp_NxqAVj3UWMnbXxLGy727S5gLxnFE-AlzhPvpl0=" alt="Turista" width="612" height="408">
-    </section>
+        <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </section>
     <hr>
+    <p>A continuacion aqui mencionaremos 3 zonas muy concurridas de Wachin City junto con una pequeña descripcion de estas.</p>
+
     <section>
-        <h2>Zonas para visitar</h2>
-        <p>A continuacion aqui mencionaremos 3 zonas muy concurridas de Wachin City <br>junto con una pequeña descripcion de estas.</p>
         <hr>
-    <ol>
-    <li><h3>Wachinopolis</h3></li>
+
+        <h3>Wachinopolis</h3>
       <p>Wachinopolis es un predio ubicado sobre la Avenidad Wang Ching, en <br>la Localidad de Wachin Street, Provincia de La Pampa. </p>
       <strong>Caracteristicas principales:</strong>
       <ul><li>Recreacion y deporte: Dispone de juegos infantiles, estaciones de ejercicio <br>y areas de descanso.</li>
@@ -32,7 +99,7 @@
       <li>Atractivos: Incluye una zona de muestra con replicas de dinosaurios, ademas de ser sede frecuente de eventos culturales,
       <br>como la Wachin-Fest y actividades culturales.</li></ul>
       <hr>
-    <li><h3>Wachintong DC</h3></li>  
+    <h3>Wachintong DC</h3> 
      <p>Es un barrio de clase alta, hogar de los descendientes del fundador.</p>
       <strong>Caracteristicas principales:</strong>
       <ul><li>Ambiente: Comparado a otros barrios Wachintong tiene un tono mas maduro, tranquilo y sofisticado.
@@ -41,7 +108,7 @@
         <br>un hermoso jardin japones y fotos historicas de la fundacion de Wachin City.</li>
       <li>Gastronomia: Incluye cafes de moda, restaurantes organicos y la famosa casa de te del mercado de flores Los Wachines.</li></ul>
        <hr>
-    <li><h3>Wachin-Fest</h3></li>  
+    <h3>Wachin-Fest</h3>
      <p>Es la celebracion de la fundacion de la ciudad donde se tienen diversas actividades culturales, una fiesta geek y la clasica Danza del Dragon.</p>
       <strong>Caracteristicas principales:</strong>
       <ul><li>Danza Del Dragon: Se trata de una danza acrobatica y fluida donde los bailarines 
@@ -53,7 +120,16 @@
       siendo este un espacio principalmente orientado hacia la juventud del pueblo, aunque esta abierto para gente de todas las edades.
     <br>En esta fiesta se llevan a cabo bailes, competencias de Cosplay, proyeccion de peliculas, venta de mangas y comics. La misma se realiza <br>
   desde las 12 de la mañana hasta las 12 de la noche, el que mas aguanta recibe como premio la estatua de un dragon hecha de cristal.</li></ul>
-  
-    </ol></section>
+    </section>
+    </main>
+
+    <footer class="container">
+        <a href="mailto:consultaswachincity@gmail.com">Escribinos por mail</a>
+        <a href="tel:+542954123456">Teléfono</a>
+        <p><small>&copy; 2026 Wachin City. </small></p>
+        <address>Desarrollado por GRUPO 11 - Bautista Hernan Gomez / Tiziano Villarroel / Enzo Dominguez.</address>
+    </footer>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="./JS/main.js"></script>
 </body>
 </html>
