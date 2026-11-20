@@ -145,3 +145,52 @@ if (formContacto) {
   });
 }
 
+function crearSaberMas(selector = ".saber-mas", lineas = 3) {
+  document.querySelectorAll(selector).forEach(texto => {
+    // Limita el texto a N líneas
+    texto.style.display = "-webkit-box";
+    texto.style.webkitBoxOrient = "vertical";
+    texto.style.webkitLineClamp = lineas;
+    texto.style.overflow = "hidden";
+
+    // Si el texto ya cabe completo, no hace falta botón
+    if (texto.scrollHeight <= texto.clientHeight) return;
+
+    const boton = document.createElement("button");
+    boton.textContent = "Saber más";
+
+    boton.addEventListener("click", () => {
+      const abierto = texto.style.webkitLineClamp === "unset";
+      texto.style.webkitLineClamp = abierto ? lineas : "unset";
+      boton.textContent = abierto ? "Saber más" : "Saber menos";
+    });
+
+    texto.after(boton);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => crearSaberMas());function crearSaberMas(selector = ".saber-mas", lineas = 3) {
+  document.querySelectorAll(selector).forEach(texto => {
+    // Limita el texto a N líneas
+    texto.style.display = "-webkit-box";
+    texto.style.webkitBoxOrient = "vertical";
+    texto.style.webkitLineClamp = lineas;
+    texto.style.overflow = "hidden";
+
+    // Si el texto ya cabe completo, no hace falta botón
+    if (texto.scrollHeight <= texto.clientHeight) return;
+
+    const boton = document.createElement("button");
+    boton.textContent = "Saber más";
+
+    boton.addEventListener("click", () => {
+      const abierto = texto.style.webkitLineClamp === "unset";
+      texto.style.webkitLineClamp = abierto ? lineas : "unset";
+      boton.textContent = abierto ? "Saber más" : "Saber menos";
+    });
+
+    texto.after(boton);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => crearSaberMas());
