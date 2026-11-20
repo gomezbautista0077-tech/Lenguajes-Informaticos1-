@@ -416,3 +416,20 @@ body.oscuro {
     border-radius: 10px;
     bottom: 1.5rem;
 }
+
+/* Texto recortado a 3 líneas */
+.texto-corto {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+/* Texto completo al hacer clic en "Leer más" */
+.texto-corto.expandido {
+  display: block;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  overflow: visible;
+}
