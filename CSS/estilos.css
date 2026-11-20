@@ -366,3 +366,35 @@ body.oscuro {
 .texto-corto.expandido {
   display: block;
 }
+
+/* Mensaje general que muestra main.js debajo del formulario */
+.msg-error,
+.msg-exito {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border-left: 5px solid;
+}
+
+.msg-error {
+    background-color: #fdecea;
+    color: #7a1c14;
+    border-left-color: #c0392b;
+}
+
+.msg-exito {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    border-left-color: #2e7d32;
+}
+/* Variante propia de btn con la paleta (se usa como "btn btn-wachin") */
+
+.btn-wachin {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
