@@ -416,3 +416,13 @@ body.oscuro {
     border-radius: 10px;
     bottom: 1.5rem;
 }
+
+
+/* NOTICIAS - categoría y fecha */
+
+.meta-noticia {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
