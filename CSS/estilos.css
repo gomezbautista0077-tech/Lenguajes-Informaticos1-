@@ -416,6 +416,15 @@ body.oscuro {
     bottom: 1.5rem;
 }
 
+
+/* NOTICIAS - categoría y fecha */
+
+.meta-noticia {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
 .texto-corto {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -430,3 +439,4 @@ body.oscuro {
   line-clamp: unset;
   overflow: visible;
 }
+ 
