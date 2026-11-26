@@ -115,12 +115,6 @@ main {
 
 }
 
-/* Solo el subte: otro color de fondo */
-
-.estado-subte {
-    background-color: rgba(196, 123, 0, 0.35);
-}
-
 
 /* PRESENTACIÓN */
 
@@ -495,4 +489,9 @@ body.oscuro {
     text-transform: uppercase;
     padding: 0.3rem 0.8rem;
     border-radius: 8px;
+}
+
+.datos-utiles a {
+    color: var(--color-acento);
+    font-weight: bold;
 }
