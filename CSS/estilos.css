@@ -115,6 +115,12 @@ main {
 
 }
 
+/* Solo el subte: otro color de fondo */
+
+.estado-subte {
+    background-color: rgba(196, 123, 0, 0.35);
+}
+
 
 /* PRESENTACIÓN */
 
@@ -440,3 +446,53 @@ body.oscuro {
   overflow: visible;
 }
  
+
+/* DATOS ÚTILES */
+
+.datos-utiles {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.datos-utiles h2 {
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+}
+
+.datos-utiles ul {
+    list-style: none;
+}
+
+/* ESTADO SUBTE */
+
+.estado-subte {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-tarjeta);
+    border: 1px solid rgba(123, 168, 173, 0.4);
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+}
+
+.icono-subte {
+    font-size: 1.5rem;
+}
+
+.info-subte {
+    display: flex;
+    flex-direction: column;
+}
+
+.servicios-afectados {
+    margin-left: auto;
+    background-color: #fde8e8;
+    color: #c0392b;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 8px;
+}
